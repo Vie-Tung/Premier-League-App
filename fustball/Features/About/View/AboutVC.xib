@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutVC" customModule="fustball" customModuleProvider="target">
+            <connections>
+                <outlet property="avatar" destination="8bp-8Y-Vwz" id="xWy-Rv-buU"/>
+                <outlet property="profileEmail" destination="ZGp-3N-9nY" id="KZr-5V-lxb"/>
+                <outlet property="profileGithub" destination="X15-Nl-dyz" id="mSs-HW-gqW"/>
+                <outlet property="profileName" destination="pa2-DK-mmw" id="iL6-O8-wk0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kKN-LV-AIO">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Io-4X-dnn">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="759"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pkr-7a-ly0" customClass="CardView" customModule="Football_App" customModuleProvider="target">
+                                    <rect key="frame" x="32" y="31.999999999999986" width="329" height="226.66666666666663"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yovi Eka Putra" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pa2-DK-mmw">
+                                            <rect key="frame" x="32" y="140" width="265" height="17"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="yovi121093@gmail.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZGp-3N-9nY">
+                                            <rect key="frame" x="32" y="161" width="265" height="14.666666666666657"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8bp-8Y-Vwz" customClass="CircleImageView" customModule="Football_App" customModuleProvider="target">
+                                            <rect key="frame" x="118.66666666666666" y="32" width="92" height="92"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="92" id="99G-r1-lQr"/>
+                                                <constraint firstAttribute="height" constant="92" id="qVb-73-Lhy"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="github: https://github.com/yovi-ep" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X15-Nl-dyz">
+                                            <rect key="frame" x="32" y="179.66666666666669" width="265" height="15"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="8bp-8Y-Vwz" firstAttribute="centerX" secondItem="pkr-7a-ly0" secondAttribute="centerX" id="2KD-wz-cXu"/>
+                                        <constraint firstAttribute="bottom" secondItem="X15-Nl-dyz" secondAttribute="bottom" constant="32" id="77c-Jc-zgx"/>
+                                        <constraint firstAttribute="trailing" secondItem="ZGp-3N-9nY" secondAttribute="trailing" constant="32" id="Blt-uS-6F8"/>
+                                        <constraint firstItem="pa2-DK-mmw" firstAttribute="top" secondItem="8bp-8Y-Vwz" secondAttribute="bottom" constant="16" id="FIB-or-fXO"/>
+                                        <constraint firstItem="X15-Nl-dyz" firstAttribute="top" secondItem="ZGp-3N-9nY" secondAttribute="bottom" constant="4" id="K0r-wj-i41"/>
+                                        <constraint firstItem="pa2-DK-mmw" firstAttribute="leading" secondItem="pkr-7a-ly0" secondAttribute="leading" constant="32" id="OSW-1M-Dns"/>
+                                        <constraint firstItem="ZGp-3N-9nY" firstAttribute="top" secondItem="pa2-DK-mmw" secondAttribute="bottom" constant="4" id="Pfo-yE-TbL"/>
+                                        <constraint firstItem="8bp-8Y-Vwz" firstAttribute="top" secondItem="pkr-7a-ly0" secondAttribute="top" constant="32" id="VkK-nw-Gtq"/>
+                                        <constraint firstAttribute="trailing" secondItem="X15-Nl-dyz" secondAttribute="trailing" constant="32" id="WkX-qr-5mn"/>
+                                        <constraint firstItem="X15-Nl-dyz" firstAttribute="leading" secondItem="pkr-7a-ly0" secondAttribute="leading" constant="32" id="n2o-6e-Kw6"/>
+                                        <constraint firstItem="ZGp-3N-9nY" firstAttribute="leading" secondItem="pkr-7a-ly0" secondAttribute="leading" constant="32" id="oox-zN-waV"/>
+                                        <constraint firstAttribute="trailing" secondItem="pa2-DK-mmw" secondAttribute="trailing" constant="32" id="qlF-aS-CgW"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                            <real key="value" value="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cardRadius">
+                                            <real key="value" value="6"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                            <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="pkr-7a-ly0" firstAttribute="leading" secondItem="8Io-4X-dnn" secondAttribute="leading" constant="32" id="CQo-Qz-UEF"/>
+                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="pkr-7a-ly0" secondAttribute="bottom" constant="32" id="Lgn-YN-c3i"/>
+                                <constraint firstItem="pkr-7a-ly0" firstAttribute="top" secondItem="8Io-4X-dnn" secondAttribute="top" constant="32" id="S44-ne-Vhg"/>
+                                <constraint firstAttribute="trailing" secondItem="pkr-7a-ly0" secondAttribute="trailing" constant="32" id="XdB-d4-hYS"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="8Io-4X-dnn" firstAttribute="leading" secondItem="kKN-LV-AIO" secondAttribute="leading" id="468-fR-0f4"/>
+                        <constraint firstItem="8Io-4X-dnn" firstAttribute="top" secondItem="kKN-LV-AIO" secondAttribute="top" id="OOi-GO-szn"/>
+                        <constraint firstItem="8Io-4X-dnn" firstAttribute="width" secondItem="kKN-LV-AIO" secondAttribute="width" id="Zfa-xb-Sxx"/>
+                        <constraint firstAttribute="bottom" secondItem="8Io-4X-dnn" secondAttribute="bottom" id="aaH-TV-k0d"/>
+                        <constraint firstAttribute="trailing" secondItem="8Io-4X-dnn" secondAttribute="trailing" id="wqb-eA-bYJ"/>
+                        <constraint firstItem="8Io-4X-dnn" firstAttribute="height" secondItem="kKN-LV-AIO" secondAttribute="height" priority="250" id="yqa-Im-8nV"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="hfo-gV-9ox"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="Hkb-dW-M2q"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="kKN-LV-AIO" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="JVu-Hw-PFS"/>
+                <constraint firstItem="kKN-LV-AIO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="aSq-xC-Re5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="kKN-LV-AIO" secondAttribute="bottom" id="qvK-F5-3Zt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kKN-LV-AIO" secondAttribute="trailing" id="rZm-d2-wwT"/>
+            </constraints>
+            <point key="canvasLocation" x="61.832061068702288" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
